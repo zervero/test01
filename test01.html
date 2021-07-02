@@ -1,0 +1,35 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>好玩的</title>
+  <link href="./index.css" rel="stylesheet" />
+</head>
+<body style="background-color: rgb(253, 208, 230);">
+  <div class="flex flex-center fontcolor">
+    <div class="flex flex-direction">
+      <div class="text-center ">今天是认识<span class="namecolor f36">周小姐</span>的</div>
+      <div class="text-center">
+        <span class="pad10_lr">第</span><span class="f36" id="dayValue">999</span><span class="pad10_lr">天</span>
+        <span class="f36" id="hourValue">999</span><span class="pad10_lr">小时</span>
+        <span class="f36" id="timeValue">999</span><span class="pad10_lr">分钟</span>
+      </div>
+      <div class="text-center">
+        <img src="./zhu01.jpeg" alt="" class="imageSize">
+      </div>
+    </div>
+  </div>
+  <script>
+    var endTime = parseInt(new Date().getTime() / 1000)-new Date('2020','11','05','22','38','00').getTime() / 1000;
+    var timeDay = parseInt(endTime / 60 / 60 / 24); //相差天数
+    endTime = endTime - timeDay * 60 * 60 * 24;
+    var timeHour = parseInt(endTime / 60 / 60); //相差小时
+    endTime = endTime - timeHour * 60 * 60;
+    var timeMinutes = parseInt(endTime / 60); //相差分钟
+    document.getElementById("dayValue").innerText=timeDay;
+    document.getElementById("hourValue").innerText=timeHour;
+    document.getElementById("timeValue").innerText=timeMinutes;
+  </script>
+</body>
+</html>

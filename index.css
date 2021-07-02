@@ -1,0 +1,32 @@
+.flex {
+  display: flex;
+}
+.flex-direction {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.align-center {
+  align-items: center;
+}
+.flex-center {
+  justify-content: center;
+}
+.f36 {
+  font-size: 36px;
+}
+.pad10_lr {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.imageSize {
+  width:350px ;
+  height: 622px;
+}
+.fontcolor {
+  color: rgb(247, 147, 180);
+}
+.namecolor {
+  color: rgb(244, 66, 180);
+}
